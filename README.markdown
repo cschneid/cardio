@@ -31,10 +31,10 @@ Or, using my favorite testing library, [Contest](http://labs.citrusbyte.com/proj
           @res = fetch("http://www.github.com")
         end
         test "should be gzipped" do
-          assert_gzipped res
+          assert_gzipped @res
         end
         test "should be cached" do
-          assered_cached res
+          assered_cached @res
         end
       end
     end
